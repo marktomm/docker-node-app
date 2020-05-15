@@ -2,6 +2,8 @@ version: "3"
 services:
   api:
     build: api-container/
+    volumes:
+      - ./api-container/app:/src/
     ports:
       - 9090:9090
   gui:
